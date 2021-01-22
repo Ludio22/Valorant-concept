@@ -1,0 +1,76 @@
+/*background-ellipses*/
+.background-ellipses__ellips1 {
+  width: 880px;
+  height: 880px;
+  left: -147px;
+  top: -275px;
+  z-index: -1;
+  position: absolute;
+  border-radius: 50%;
+  background: #FF4656;
+}
+.background-ellipses__ellips2 {
+  width: 18px;
+  height: 18px;
+  left: 1134px;
+  top: 30px;
+  z-index: -1;
+  position: absolute;
+  border-radius: 50%;
+  background: #FF4656;
+}
+
+/*header*/
+.header {
+  background-color: #1F2326;
+  width: 1157px;
+  height: 58px;
+  margin-top: 133px;
+  border-radius: 10px 10px 0px 0px;
+  justify-content: space-around;
+}
+.header__logo {
+  justify-content: space-around;
+  align-items: center;
+  width: 136px;
+  height: 58px;
+}
+.header__a {
+  padding: 24px 10px;
+  text-decoration: none;
+  font-size: 8px;
+  color: #FFFFFF;
+}
+.header__a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.header__tringle {
+  border: 3px solid transparent;
+  border-top: 4px solid white;
+  width: 0px;
+  margin: 3px 0 0 3px;
+  float: right;
+}
+.header__img {
+  height: 20px;
+}
+.header__img_ellips {
+  margin-right: 10px;
+  border-radius: 50%;
+  height: 20px;
+}
+.header__left {
+  width: 696px;
+  padding-right: 284px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__right {
+  align-items: center;
+  justify-content: flex-end;
+}
+.header__rectangle {
+  width: 1px;
+  height: 20px;
+  background-color: #FFFFFF;
+}

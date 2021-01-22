@@ -1,0 +1,54 @@
+/*header*/
+.header{
+  background-color: #1F2326;
+  width: 1157px;
+  height: 58px;
+  margin-top: 133px;
+  border-radius: 10px 10px 0px 0px;
+  justify-content: space-around;
+  &__logo{
+    justify-content: space-around;
+    align-items: center;
+    width: 136px;
+    height: 58px;
+  }
+  &__a{
+    padding: 24px 10px;
+    text-decoration: none;
+    font-size: 8px;
+    color: #FFFFFF;
+  }
+  &__a:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  &__tringle{
+    border: 3px solid transparent;
+    border-top: 4px solid white;
+    width: 0px;
+    margin: 3px 0 0 3px;
+    float: right;
+  }
+  &__img{
+    height: 20px;
+    &_ellips{
+      margin-right: 10px;
+      border-radius: 50%;
+      height: 20px;
+    }
+  }
+  &__left{
+    width: 696px;
+    padding-right: 284px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__right{
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__rectangle{
+    width: 1px;
+    height: 20px;
+    background-color: #FFFFFF;
+  }
+}

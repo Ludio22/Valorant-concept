@@ -1,0 +1,24 @@
+
+@mixin background-ellips-style ($width, $height, $left, $top) {
+  width: $width;
+  height: $height;
+  left: $left;
+  top: $top;
+}
+
+.background-ellipses{
+    &__ellips1{
+      @include background-ellips-style(880px, 880px, -147px, -275px);
+      z-index: -1;
+      position: absolute;
+      border-radius: 50%;
+      background: #FF4656;
+    }
+    &__ellips2{
+      @include background-ellips-style(18px, 18px, 1134px, 30px);
+      z-index: -1;
+      position: absolute;
+      border-radius: 50%;
+      background: #FF4656;
+    }
+}
