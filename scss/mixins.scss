@@ -1,0 +1,66 @@
+@mixin AgentsTitleSet($color, $tx, $ty, $scale, $fs) {
+  color: $color;
+  font-size: $fs;
+  height: 0;
+  transform: rotate(90deg) translate($tx, $ty) scaleY($scale);
+  width: 0;
+}
+
+@mixin Agent($url, $color) {
+  background-color: $color;
+  background-image: url($url);
+  background-size: cover;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  &-name {
+    @include AgentsTitleSet(#fff, 17px, -30px, 0.92, 2.29em);
+  }
+  &-country {
+    @include AgentsTitleSet(#ff4656, 18px, -39px, 0.92, 11px);
+  }
+}
+
+@mixin AgentFooter($bc, $bcc) {
+  align-items: center;
+  background-color: $bcc;
+  border: 1px solid $bc;
+  box-sizing: border-box;
+  display: flex;
+  height: 48px;
+  justify-content: space-around;
+  padding: 6px 0 6px 0;
+  transform: translate(14px, 398px);
+  width: 192px;
+}
+
+@mixin AgentFooterImgSet($a, $b, $c, $d) {
+  &-icon {
+    &1 {
+      height: $a;
+    }
+    &2 {
+      height: $b;
+    }
+    &3 {
+      height: $c;
+    }
+    &4 {
+      height: $d;
+    }
+  }
+}
+
+%FooterItem {
+  background-color: #f8f8f8;
+  border: 1px solid #1f2326;
+  display: flex;
+  height: 105px;
+  margin-right: 36px;
+  transform: translate(-54px, 0px);
+}
+
+%RedBlock {
+  background-color: #ff4656;
+  height: 10px;
+  width: 10px;
+}
